@@ -1,0 +1,207 @@
+:root {
+    --heading:rgb(235, 222, 52);
+}
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family:  'Montserrat',sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.sticky{
+	position: fixed;
+	top:0;
+	z-index: 9;
+	width: 100%;
+	background-color: white;
+	min-height: 100px;
+	height: auto;
+}
+
+
+.heading{
+	position: relative;
+	padding-top: 6%;
+	font-weight: bold;
+	font-size: 300%;
+}
+
+.heading:after{
+	content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 5%; /* Change this to whatever width you want to have before hover. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.heading:hover:after{
+	content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 25%; /* Change this to whatever width you want to have before hover. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+section{
+	min-height: 90vh;
+}
+header{
+	min-height: 100vh;
+}
+
+
+/*****************************Navigation Bar*******************************
+**************************************************************************/
+.navbar-brand img {
+	width: 60px;
+    height: 60px;
+}
+
+/*overding bootstrap for nav bar*/
+.lightnav> .navbar-light .navbar-nav .nav-link{
+	text-transform: uppercase;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: bold;
+	color: black;
+	padding: 0px;
+ }
+.lightnav> .navbar-light .navbar-nav .nav-link.active{
+ 	text-transform: uppercase;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: bold;
+	color: black;
+ }
+.lightnav> .navbar-light .navbar-nav .nav-link:hover{
+	text-transform: uppercase;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: bold;
+	color: black;
+	border-bottom: 2px solid;
+ }
+
+/*overding bootstrap Only for home page nav bar*/
+.home> .navbar-light .navbar-nav .nav-link{
+	text-transform: uppercase;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: bold;
+	color: white;
+ }
+ .home> .navbar-light .navbar-nav .nav-link.active{
+ 	text-transform: uppercase;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: bold;
+	color: white;
+ }
+.home>  .navbar-light .navbar-nav .nav-link:hover{
+	text-transform: uppercase;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: bold;
+	color: white;
+	border-bottom: 2px solid;
+ }
+
+
+/***************************Home Page*******************************
+**************************************************************************/
+.home{
+    min-height: 100vh;
+    text-align: center;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home h3{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 100px;
+}
+.home-text{
+	font-family: 'Peddana', sans-serif;
+	font-size: 25px;
+	color: rgb(235, 222, 52);
+}
+
+.tagline{
+	color: rgb(235, 222, 52);
+	font-family: 'Peddana', sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+.hero-box{
+	height: 100vh;
+	width: 100%;
+}
+
+/***************************Features *******************************
+**************************************************************************/
+.f-box{
+	min-height: 300px;
+	position: relative;
+}
+
+/***************************About US *******************************
+**************************************************************************/
+.AboutUS{
+	background-color: fff8cd;
+}
+
+
+/***************************Booking*******************************
+**************************************************************************/
+.Booking{
+	background-color: fff8cd;	
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/football.jpg);
+    background: linear-gradient(rgba(0,0,10,.5), rgba(125,155,215,.5)),url(../images/football.jpg);
+}
+
+.b-box{
+	min-height: 400px;
+}
+
+
+/***************************Login Page*******************************
+**************************************************************************/
+
+.active-form
+{
+	background-color: red;
+}
+
+.active_button
+{
+	background-color: orange;
+	color: white;	
+}
+
+
+/***************************view.php page*******************************
+**************************************************************************/
+.view{
+    min-height: 100vh;
+    text-align: center;
+    background: linear-gradient(rgba(255,255,255,0.6),rgba(55,25,255,0.5)),url("..s/images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.limit-height{
+	height: 150px;
+
+}
